@@ -144,7 +144,7 @@ public class Test0 extends TestCase {
 	}
 
 	private static void genTestFromFile(String path) {
-		final String OFFS = "../../java/siccTESTS/bparser/ExFiles/";
+		final String OFFS = "../../jtests/ExFiles/";
 		final StringBuilder buf = new StringBuilder();
 		try {
 			Util.append(new FileReader(OFFS + path), buf);
