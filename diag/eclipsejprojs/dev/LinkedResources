@@ -1,0 +1,4 @@
+src/sicc/diag: ../../java
+src/siccTESTS/diag: ../../jtests
+src/sicc/bparser: ../../../bparser/java
+
