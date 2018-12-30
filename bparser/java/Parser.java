@@ -15,7 +15,6 @@ import java.io.Reader;
  *
 */
 public class Parser extends
-	//LegacyParser
 	ModularParser
 {	
 	public Parser(String filename, BufferedReader reader, PreprocessorHandler pph) {

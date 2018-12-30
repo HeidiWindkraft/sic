@@ -41,11 +41,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/java/IPreprocessor.java</locationURI>
 		</link>
 		<link>
-			<name>src/sicc/bparser/LegacyParser.java</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/java/LegacyParser.java</locationURI>
-		</link>
-		<link>
 			<name>src/sicc/bparser/ModularParser.java</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/java/ModularParser.java</locationURI>
