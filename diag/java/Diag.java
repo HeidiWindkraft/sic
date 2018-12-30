@@ -19,7 +19,7 @@ public class Diag {
 			final TreeMap<String, Severity> m = new TreeMap<String, Severity>();
 			m.put(KEY_UNKNOWN_SEVERITY, Severity.FATAL);
 			m.put(DiagException.KEY_INTERNAL, Severity.FATAL);
-			m.put("ParserVlog", Severity.LOG);
+			m.put("ParserVlog", Severity.DBGLOG);
 			m.put("ParserError", Severity.FATAL);
 			m.put("ParserFatal", Severity.FATAL);
 			m.put("ParserUnexpectedException", Severity.FATAL);
