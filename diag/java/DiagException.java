@@ -42,8 +42,11 @@ public class DiagException extends RuntimeException {
 		mSeverity = sev;
 	}
 	
-	public FilePos getFPos() {
+	public FilePos refFPos() {
 		return mFPos;
+	}
+	public FilePos getFPos() {
+		return new FilePos(mFPos);
 	}
 
 	public String getKey() {

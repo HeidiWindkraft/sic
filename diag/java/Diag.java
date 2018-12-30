@@ -21,6 +21,7 @@ public class Diag {
 			m.put(DiagException.KEY_INTERNAL, Severity.FATAL);
 			m.put("ParserVlog", Severity.LOG);
 			m.put("ParserError", Severity.FATAL);
+			m.put("ParserFatal", Severity.FATAL);
 			m.put("ParserUnexpectedException", Severity.FATAL);
 			m.put("Log", Severity.LOG);
 			sDefaultSevMap = java.util.Collections.unmodifiableMap(m);
@@ -41,7 +42,7 @@ public class Diag {
 		Severity sev = mSevMap.get(ex.getKey());
 		if (sev == null) {
 			sev = Severity.UFATAL;
-			report(new DiagException(ex.getFPos(), KEY_UNKNOWN_SEVERITY, "Unknown diagnostics key: " + key));
+			report(new DiagException(ex.refFPos(), KEY_UNKNOWN_SEVERITY, "Unknown diagnostics key: " + key));
 		} else {
 			ex.setDynamicSeverity(sev);
 		}
