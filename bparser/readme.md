@@ -53,4 +53,4 @@ SIC is licensed under GPL-3.0.
 ## Acknowledgments
 
 The template for this file was [PurpleBooth's README-Template.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2),
-but I removed a lot of stuff, because of laziness.
+but I removed a lot of stuff because of laziness.
