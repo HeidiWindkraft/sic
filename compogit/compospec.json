@@ -24,7 +24,7 @@
 		"overrides": "rest",
 		"path": [
 			"sicc",
-			"drafts",
+			"drafts"
 		]
 	},
 	"sice_x": { "overrides": "rest", "path": ["sice"]},
