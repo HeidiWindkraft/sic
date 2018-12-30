@@ -10,7 +10,7 @@ import java.io.StringReader;
 import sicc.bparser.Util;
 
 public class Test4ParserPerf {
-	private final static String OFFS = "src/bparserTEST/ExFiles/";
+	private final static String OFFS = "../../test/";
 
 	private static final class TUtil extends Util {
 		public static void bufferedAppend(Reader r, StringBuilder buf) throws IOException {

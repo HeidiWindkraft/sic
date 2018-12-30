@@ -13,7 +13,7 @@ import sicc.bparser.SBlock;
 import sicc.bparser.SpecialTokens;
 
 public class Test3ReaderPerf {
-	private final static String OFFS = "src/bparserTEST/ExFiles/";
+	private final static String OFFS = "../../test/";
 
 	private static String readWholeTextFile(String path) {
 		final StringBuilder buf = new StringBuilder();
