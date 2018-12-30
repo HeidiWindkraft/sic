@@ -25,10 +25,10 @@ This allows to preprocess SIC code without losing file and line information.
 ### Robustness
 If there is an error in a block, you can drop it and continue analysing the rest of the file.
 
-### Context sensitive grammers
+### Context sensitive grammars
 Blocks can serve as a context synchronization point for parser and lexer,
 so all findings of the parser are known to the lexer.
-C and C++ are often described using context sensitive grammers (for C and C++ we need to synchronize at statement level, though).
+C and C++ are often described using context sensitive grammars (for C and C++ we need to synchronize at statement level, though).
 
 ### Using different parsers
 You can use different parsers for the code in certain blocks, as long as the respective language
