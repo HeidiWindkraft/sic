@@ -30,6 +30,19 @@
 	"sice_x": { "overrides": "rest", "path": ["sice"]},
 	"tools": { "overrides": "rest", "path": ["tools"]},
 
+	"bparser_in_sicc": {
+		"overrides": "sicc_x",
+		"path": [
+			"sicc/eclipsejprojs/dev/src/sicc/bparser"
+		]
+	},
+	"diag_in_sicc": {
+		"overrides": "sicc_x",
+		"path": [
+			"sicc/eclipsejprojs/dev/src/sicc/diag"
+		]
+	},
+
 	"compogit": { "overrides": "rest", "path": ["compogit"]},
 	"rewrite_history": { "overrides": "rest", "path": ["rewrite_history"]}
 }
