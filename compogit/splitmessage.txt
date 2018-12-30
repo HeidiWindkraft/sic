@@ -1,0 +1,3 @@
+%s (component ${compogit_component} of %h)
+
+%b
