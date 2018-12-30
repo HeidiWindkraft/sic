@@ -1,0 +1,35 @@
+{
+	"rest": { "glob": ["**"]},
+
+	"ar_x": { "overrides": "rest", "path": ["ar"] },
+	"asm_x": { "overrides": "rest", "path": ["asm"]},
+	"bparser_x": {
+		"overrides": "rest",
+		"path": [
+			"bparser",
+			"java/sicc/bparser",
+			"java/siccTESTS/bparser",
+			"eclipsejprojs/Bparser"
+		]
+	},
+	"diag_x": { "overrides": "rest", "path": ["diag"]},
+	"dodl_x": { "overrides": "rest", "path": ["dodl"]},
+	"doml_x": { "overrides": "rest", "path": ["doml"]},
+	"functional_x": { "overrides": "rest", "path": ["functional"]},
+	"wichdl_x": { "overrides": "rest", "path": ["hdl"]},
+	"java2sicc_x": { "overrides": "rest", "path": ["java2sicc"]},
+	"jtemplates_x": { "overrides": "rest", "path": ["jtemplates"]},
+	"jutil_x": { "overrides": "rest", "path": ["jutil"]},
+	"sicc_x": {
+		"overrides": "rest",
+		"path": [
+			"sicc",
+			"drafts",
+		]
+	},
+	"sice_x": { "overrides": "rest", "path": ["sice"]},
+	"tools": { "overrides": "rest", "path": ["tools"]},
+
+	"compogit": { "overrides": "rest", "path": ["compogit"]},
+	"rewrite_history": { "overrides": "rest", "path": ["rewrite_history"]}
+}
