@@ -16,6 +16,21 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/sicc/diag/Diag.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/java/Diag.java</locationURI>
+		</link>
+		<link>
+			<name>src/sicc/diag/DiagException.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/java/DiagException.java</locationURI>
+		</link>
+		<link>
+			<name>src/sicc/diag/Severity.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/java/Severity.java</locationURI>
+		</link>
+		<link>
 			<name>src/sicc/bparser/Block.java</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/bparser/java/Block.java</locationURI>
