@@ -1,0 +1,2103 @@
+commit 83c8b53710dc301f70d82b744fcab36d70906580
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Feb 24 17:22:02 2018 +0100
+
+    LOCAL-1 Add one of these readme.md files for sic.bparser.
+
+A	bparser/readme.md
+
+commit bba51935270fa96c949ce5c1be9d0bf278ef2463
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Feb 24 14:09:36 2018 +0100
+
+    LOCAL-1 Commit some hdl example I once wrote...
+
+A	hdl/examples/scpu2/scpu2.txt
+A	hdl/examples/scpu2/tables.fods
+
+commit 12491a20c503e55524b63147e31670703bf2d447
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Sep 10 23:20:32 2017 +0200
+
+    LOCAL-1 sice: add some stuff that failed.
+
+M	sice/include/private/private/bitset.h
+M	sice/include/public/sice/basic_types.h
+A	sice/include/public/sice/lockarray.h
+A	sice/include/public/sice/tool.h
+A	sice/include/public/sice/tool_atomics.h
+A	sice/include/public/sice/tool_atomics_c11.h
+A	sice/include/public/sice/tool_gnu.h
+A	sice/include/public/sice/tool_gnu_clang.h
+A	sice/include/public/sice/tool_id.h
+A	sice/include/public/sice/tool_rot.h
+A	sice/make/common.mak
+M	sice/make/files.mak
+A	sice/make/opts.mak
+A	sice/make/opts_gnu.mak
+M	sice/src/bitset.c
+A	sice/src/bitset_find.c
+M	sice/test/bitset/Makefile
+M	sice/test/bitset/main
+M	sice/test/bitset/main.c
+A	sice/test/bitset/objdumps/objdump_main.s
+A	sice/test/bitset/objdumps/objdump_main_O3.s
+A	sice/test/bitset/objdumps/objdump_main_O3_2.s
+A	sice/test/bitset/objdumps/objdump_main_O3_3.s
+
+commit 228347fac73f27cffe8dfafb46ddaa8688cb006d
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Sep 3 23:45:26 2017 +0200
+
+    LOCAL-1 sice bitset: Avoid code duplication and hope that compiler optimizes this.
+
+M	sice/include/public/sice/basic_types.h
+M	sice/src/bitset.c
+M	sice/test/bitset/main
+
+commit db4ece7b43d6121523b9db42f0c5e52f286ba172
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Sep 3 20:42:47 2017 +0200
+
+    LOCAL-1 work on sice bitset.
+
+M	sice/include/private/private/bitset.h
+M	sice/src/bitset.c
+M	sice/test/bitset/main
+M	sice/test/bitset/main.c
+
+commit 47b80710dd2d933212e4b220d98231c1a733c151
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Sep 3 20:00:54 2017 +0200
+
+    LOCAL-1 add sice bitset.
+
+M	sice/include/private/private/bitset.h
+M	sice/include/public/sice/basic_types.h
+M	sice/test/bitset/Makefile
+M	sice/test/bitset/main
+M	sice/test/bitset/main.c
+
+commit ec80a4eba558c77aa1d3ec06bf4c961660deabd9
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Sep 3 19:55:36 2017 +0200
+
+    LOCAL-1 add sice bitset.
+
+A	sice/include/private/private/bitset.h
+A	sice/include/private/private/bitset_print.h
+A	sice/include/public/sice/basic_types.h
+A	sice/include/public/sice/externc.h
+A	sice/include/public/sice/types.h
+A	sice/make/files.mak
+A	sice/src/bitset.c
+A	sice/src/bitset_print.c
+A	sice/test/bitset/Makefile
+A	sice/test/bitset/main
+A	sice/test/bitset/main.c
+
+commit b3a6e4a1e12b49c7abec040c1c04d91f5d9a99df
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Aug 31 22:21:28 2017 +0200
+
+    LOCAL-1 Add SIC runtime environment.
+
+A	sice/include/private/private/rdheap_st.h
+
+commit 4807c9b7a123aa5fb92e14e1fc3385f9a2a47af4
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Aug 31 22:09:26 2017 +0200
+
+    LOCAL-1 Add SIC runtime environment.
+
+A	sice/include/public/sice/mutex.h
+A	sice/include/public/sice/typeinfo.h
+
+commit ea2de6f22dd0a903823657b45191d7a6fca7f95e
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Aug 31 21:52:43 2017 +0200
+
+    LOCAL-1 Add SIC runtime environment.
+
+M	sice/src/rdheap_dyn/rdheap_dyn.cxx
+
+commit c4d017f1130c82ad9d94af6ab0268109a743837f
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Aug 31 21:51:22 2017 +0200
+
+    LOCAL-1 Add SIC runtime environment.
+
+A	sice/include/private/private/os_alloc.h
+A	sice/include/private/private/panic.h
+A	sice/include/private/private/rdheap_dyn.h
+A	sice/include/public/sice/ctypeid.h
+A	sice/include/public/sice/pstack.h
+A	sice/include/public/sice/pstack_dyn.h
+A	sice/include/public/sice/rdheap.h
+A	sice/src/os_alloc/malloc.c
+A	sice/src/os_alloc/mmap.c
+A	sice/src/rdheap_dyn/rdheap_dyn.cxx
+
+commit 3369013d02b36738b6d07ca623ac4dae7c25405c
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Aug 31 21:50:32 2017 +0200
+
+    LOCAL-1 some time ago I wrote some wiring conventions... but they might not make sense.
+
+M	hdl/misc/0.txt
+
+commit 2f3fea4c29f42fe248da4133e515466b577bf75b
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Wed Aug 23 12:20:37 2017 +0200
+
+    LOCAL-1 Start a CHDL grammar.
+
+A	hdl/yacc/Parser.y
+
+commit 0a2375ab0b7ccf215f5dd12cba3599805aa85daa
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Aug 21 22:21:13 2017 +0200
+
+    LOCAL-1 some more SIC.HDL drafts.
+
+A	hdl/examples/scpu/Insn.sichdl.cxx
+A	hdl/examples/scpu/Insn0.sichdl.cxx
+A	hdl/examples/scpu/RegisterFile.cxx
+A	hdl/examples/scpu/Stages.sichdl.cxx
+M	hdl/misc/0.txt
+M	hdl/misc/misc.cxx
+A	hdl/misc/stdlib.cxx
+A	hdl/misc/stdutil.cxx
+
+commit 3c1fc6f4df719dfec37b78b9dbfe717fd4cfa890
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Tue Aug 15 15:21:38 2017 +0200
+
+    LOCAL-1 Add to sic.hdl draft.
+
+M	functional/misc/0.txt
+M	hdl/misc/0.txt
+A	hdl/misc/misc.cxx
+
+commit b6ed17fbdd305587da3eafec2ec4eec2b03b9980
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Aug 12 23:03:01 2017 +0200
+
+    LOCAL-1 Re-designing hardware description language.
+
+M	functional/misc/0.txt
+A	hdl/misc/0.txt
+
+commit 6f725bb218d47897fd0b47c20e8d98cca3c19432
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Aug 12 12:45:59 2017 +0200
+
+    LOCAL-1 sic.functional: Relaxing grammar of compound statments (shouldn't introduce ambiguities - they already existed).
+
+M	functional/misc/0.txt
+
+commit b851e358ed42de0487950554052061679a277b52
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Aug 12 10:58:05 2017 +0200
+
+    LOCAL-1 Trying to design a functional language.
+
+A	functional/misc/0.txt
+A	jtemplates/m4/sic/jutil/ReadableCollection.java
+A	jtemplates/m4/sic/jutil/ReadableDeque.java
+A	jtemplates/m4/sic/jutil/ReadableList.java
+A	jtemplates/m4/sic/jutil/ReadableSubArray.java
+
+commit 4474eab02238109ecedb488488ded43563ddc345
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Jul 16 18:38:35 2017 +0200
+
+    LOCAL-1 Draft some stuff.
+
+A	asm/misc/1.txt
+
+commit 921321a72ff39cb05727b25932854ba4b2ba80c8
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Apr 17 22:45:18 2017 +0200
+
+    LOCAL-1 stuff...
+
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/IAttributeCtor.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeConsts.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeLayout.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/QType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/TypeDecoration.java
+
+commit 60689c57295cba7c2f366f3fbc2d9fc65bd23ceb
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Apr 16 14:15:52 2017 +0200
+
+    LOCAL-1 Adapt sicc yacc/lex sources to new package names.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/frontend/Parser.java
+M	sicc/yacc/Lexer.lex
+M	sicc/yacc/Parser.y
+M	sicc/yacc/genKeywords.pl
+M	sicc/yacc/makeParser.sh
+
+commit 1f57fa5c1514ee472f289d856175eaa112dc4448
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 8 23:31:59 2017 +0200
+
+    LOCAL-1 scopes: RestrictedAccessRights.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/AccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/MostPermissiveAccessRights.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/RestrictedAccessRights.java
+
+commit fcf6cb2779f83a2629550c40d29488c9c78a10dd
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 8 13:17:35 2017 +0200
+
+    LOCAL-1 stash (sickday)
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IAccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScope.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/ScopeEntry.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/ScopeEntryT.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/ScopeInheritance.java
+
+commit 9a1f188064f814584c75f6ec556e0a5856c1c30a
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Apr 3 20:35:33 2017 +0200
+
+    LOCAL-1 Add reasons for more fine graned access rights.
+
+M	sicc/drafts/AccessRights_FinalNamespaces.cxx
+
+commit fefa5d70407d8eeb599b66d229009b18a3ff812f
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 1 19:04:15 2017 +0200
+
+    LOCAL-1 working on scopes.
+
+M	sicc/drafts/AccessRights_FinalNamespaces.cxx
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/SimpleAccessRights.java
+
+commit 1010599f25652fa138cd835c5c2bfd23d3551f74
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 1 17:52:02 2017 +0200
+
+    LOCAL-1 working on scopes. Only use the full name of a scope to identify it, because of partial scopes.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/CompoundAccessRights.java
+
+commit 940644e7beb20897b28e242261983107466fe6dd
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 1 13:17:38 2017 +0200
+
+    LOCAL-1 working on scopes. (Might need correction.)
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/CompoundAccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/SimpleAccessRights.java
+
+commit 3607052288ac89df83146f97d6bc5a0e5e798275
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 1 12:34:10 2017 +0200
+
+    LOCAL-1 Working on scopes.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScope.java
+
+commit 50ec4d1effc2ae9e93142faaf5f71d49a46120b1
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Apr 1 12:19:31 2017 +0200
+
+    LOCAL-1 Working on scopes. Went into wrong direction.
+
+D	sicc/eclipsejprojs/dev/src/sicc/c/scopes/AccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/CompoundAccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IAccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/ScopeLibrary.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/SimpleAccessRights.java
+
+commit ba52d0ee3c6ebce8169751e0763d4468b3d80ce6
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Mar 30 22:24:26 2017 +0200
+
+    LOCAL-1 Drafting stuff concerning protection of overloads and class specialization.
+
+M	sicc/drafts/AccessRights_FinalNamespaces.cxx
+
+commit e9fc460b60ad899a4b64fc8758a04ca5050a24e3
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Wed Mar 29 21:19:09 2017 +0200
+
+    LOCAL-1 Just some idea which doesn't work out entirely. reference register coloring.
+
+A	sicc/drafts/Opt.cxx
+
+commit c3fc3849e0249729f44668622a8f1e62b740ad59
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Wed Mar 29 21:05:43 2017 +0200
+
+    LOCAL-1 Drafts to access rights/permission/levels and final namespaces.
+
+A	sicc/drafts/AccessRights_FinalNamespaces.cxx
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/CompoundAccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/SimpleAccessRights.java
+
+commit de8a8f3f2f02ebc504bbfd572a04e37af26af61c
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Tue Mar 28 22:49:55 2017 +0200
+
+    LOCAL-1 Working on scopes.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/AccessRights.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScope.java
+M	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScopeMember.java
+
+commit 1bc28ec56cb886bfd5c4f5c9c5c9eb39204ff25f
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Tue Mar 28 22:02:04 2017 +0200
+
+    LOCAL-1 Working on new typelib and scopes.
+
+M	sicc/eclipsejprojs/dev/src/sicc/c/MpccException.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/AccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/AccessRights.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/CompoundAccessRights.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IAccessRights.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/IScopeMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/ScopeEntry.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/scopes/SimpleAccessRights.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/IType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeConsts.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeLayout.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeLayoutVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/type/ITypeLib.java
+
+commit 9dba2dacffaae4fca3bbd7049793f9074cea03a2
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Mar 12 14:04:03 2017 +0100
+
+    LOCAL-1 Create package c (for compiler) to avoid confusion. Actually the toplevel package should be called sic now.
+
+D	sicc/eclipsejprojs/dev/src/sicc/AccessLevel.java
+D	sicc/eclipsejprojs/dev/src/sicc/Assembly.java
+D	sicc/eclipsejprojs/dev/src/sicc/ClassMode.java
+D	sicc/eclipsejprojs/dev/src/sicc/Diag.java
+D	sicc/eclipsejprojs/dev/src/sicc/IPreprocessor.java
+D	sicc/eclipsejprojs/dev/src/sicc/Id.java
+D	sicc/eclipsejprojs/dev/src/sicc/Ids.java
+D	sicc/eclipsejprojs/dev/src/sicc/MpccException.java
+D	sicc/eclipsejprojs/dev/src/sicc/NameLookup.java
+D	sicc/eclipsejprojs/dev/src/sicc/Severity.java
+D	sicc/eclipsejprojs/dev/src/sicc/TrUnit.java
+D	sicc/eclipsejprojs/dev/src/sicc/Util.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/AAstNode.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ATopBlock.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/AccessMap.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/AccessMapEntry.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/AccessibleDeclScope.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/Block.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/BlockStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/BreakStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ContinueStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/Declaration.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/DeclarationList.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/DoWhileStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ExprStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/FuncDef.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IAstNode.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IAstVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IDeclarationProcessor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/INamedScopeElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IScope.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IScopeElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/IfStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/InitElemList.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/InitListElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/InitMappedElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/InitSeqElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/InitStructElement.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/JumpStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/LocalJumpStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/LocalJumpTargetType.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/LoopStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/NBlock.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/Namespace.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/NamespaceBlock.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ReturnStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ScopeElementList.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/ScopeImpl.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/Stmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/StmtList.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TopElementList.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDepRef.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDependencies.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDependency.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitTop.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitTopDefinitions.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/Typedef.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/WhileStmt.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/AAstVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/AstRePrinter.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ParseAstVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ParseSymbolsVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/PrefixAstExprReplaceVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/PrefixAstVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ReferenceLinker.java
+D	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/TypePropagator.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/AccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Assembly.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ClassMode.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Diag.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/IPreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Id.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Ids.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/MpccException.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/NameLookup.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Severity.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/TrUnit.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/Util.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/AAstNode.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ATopBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/AccessMap.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/AccessMapEntry.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/AccessibleDeclScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/Block.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/BlockStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/BreakStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ContinueStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/Declaration.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/DeclarationList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/DoWhileStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ExprStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/FuncDef.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IAstNode.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IDeclarationProcessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/INamedScopeElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IScopeElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/IfStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/InitElemList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/InitListElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/InitMappedElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/InitSeqElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/InitStructElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/JumpStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/LocalJumpStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/LocalJumpTargetType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/LoopStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/NBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/Namespace.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/NamespaceBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ReturnStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ScopeElementList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/ScopeImpl.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/Stmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/StmtList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TopElementList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TrUnitDepRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TrUnitDependencies.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TrUnitDependency.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TrUnitTop.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/TrUnitTopDefinitions.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/Typedef.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/WhileStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/AAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/AstRePrinter.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/ParseAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/ParseSymbolsVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/PrefixAstExprReplaceVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/PrefixAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/ReferenceLinker.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/ast/visitors/TypePropagator.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/AExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Add.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/AddUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/AddressOf.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/And.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/AndUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Args.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ArithPromotion.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Assign.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/BinArith.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/BinExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/BinLogic.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/BinUpdate.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/BitNot.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Call.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Cast.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Comparison.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ConstIntegerExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Constant.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Conv.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Deref.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Div.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/DivUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/EqComp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Equal.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Expr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Greater.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/GreaterEq.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/IExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/IdExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Index.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/IndexRangeBeginLast.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/InitList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LAnd.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LAndUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LNot.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LOr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LOrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LeafExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Less.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LessEq.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LiteralInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/LoadFromRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/MemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Mod.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ModUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Mul.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/MulUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Neg.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/NotEqual.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Nullptr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/NumConst.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Or.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/OrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/PointerMemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/PostDec.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/PostInc.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/PreDec.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/PreInc.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefFunc.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefGeneralization.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefInstField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefLocalField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RefStaticField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ReferenceMemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/RelComp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ReverseArithPromotion.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Shift.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Shl.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ShlUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ShortcutLogic.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Shr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/ShrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Sub.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/SubUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/TrinaryExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/TrinarySelect.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/UnaryExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/UnaryPlus.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/UnaryUpdate.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Update.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/Xor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/XorUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/ExprRePrinter.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/NameResolver.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/PrefixExprReplaceVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/PrefixExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/ReferenceLinker.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/SmallestUIntInPromotionChain.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/TypePropagator.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/exprs/visitors/TypePropagatorOld.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/EndOfBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/GenKeywords.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/Lexer.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/ParamListFromParser.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/Parser.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/TypeFromParser.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/Yylex.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/frontend/Yytoken.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/preprocessors/APreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/preprocessors/GnuPreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/AType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ATypeAdapter.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ATypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/Debug.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IAttribute.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IAttributeSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ICallableMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IConstLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IFilter.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IInheritedBase.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMemberConsts.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMemberMapper.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMemberOperator.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IMethod.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IPhysicalMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ITypeConsts.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ITypeFactoryIntrinsic.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ITypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/IVirtualField.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ParameterTypeList.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ParameterTypeListFn.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/ParameterTypeListThiscall.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/QType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/TypeDecoration.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/TypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/Util.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/algorithm/JoinBasesAndDerived.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/algorithm/JoinMemberSetListSimple.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/algorithm/Typesafety.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/AImmutableMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/ALazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/ALazyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/ALockableLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/AMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/AModifiedLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/AProxyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/AUnmodifiableLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/EmptyAttributeSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/EmptyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/HashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/JoinedMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/containers/SingletonMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/ConverterFilterPair.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/FilterConverterPair.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberByAccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberById.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberByOperatorId.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberByParamCount.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberByParams.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberByType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/filters/MemberOperatorFilter.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/metaconsts/Zero.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/simple/SimpleConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/simple/SimpleConstLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/simple/SimpleFundamentalTypeFactory.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/AUnqType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/AUnqTypeVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/IUnqFundamentalTypeFactory.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/IUnqTypeVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqArithmeticType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqCallableType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqCharType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqClass.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqCompoundUDT.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqEnum.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqFixedSizeArray.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqFloatType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqFunctionType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqFundamentalType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqImpureIntegralType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqIndexRange.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqIndirection.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqIndirectionSingle.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqIntegralType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqLRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqMethodType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqMethodTypeNonVirtual.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqMethodTypeVirtual.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqNullPtrType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqNullSlice.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqPointer.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqSIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqSlice.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqUDT.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqUIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqUnaryTypeExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqUniformComposition.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqUnion.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/typelib/unqualified/UnqVoidType.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/CClass.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/CallableMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/Field.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/InheritedBase.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/InstMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/Member.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/MemberOperator.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/PhysicalInstMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/Storage.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/TypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/types/TypeUtil.java
+A	sicc/eclipsejprojs/dev/src/sicc/c/util/ThreadPool.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/AExprVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Add.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/AddUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/AddressOf.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/And.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/AndUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Args.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ArithPromotion.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Assign.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/BinArith.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/BinExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/BinLogic.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/BinUpdate.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/BitNot.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Call.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Cast.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Comparison.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ConstInt.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ConstIntegerExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Constant.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Conv.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Deref.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Div.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/DivUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/EqComp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Equal.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Expr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Greater.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/GreaterEq.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/IExprVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/IdExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Index.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/IndexRangeBeginLast.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/InitList.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LAnd.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LAndUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LNot.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LOr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LOrUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LeafExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Less.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LessEq.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LiteralInt.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/LoadFromRef.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/MemberAccess.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Mod.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ModUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Mul.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/MulUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Neg.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/NotEqual.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Nullptr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/NumConst.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Or.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/OrUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/PointerMemberAccess.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/PostDec.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/PostInc.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/PreDec.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/PreInc.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefField.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefFunc.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefGeneralization.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefInstField.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefLocalField.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RefStaticField.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ReferenceMemberAccess.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/RelComp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ReverseArithPromotion.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Shift.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Shl.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ShlUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ShortcutLogic.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Shr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/ShrUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Sub.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/SubUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/TrinaryExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/TrinarySelect.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryPlus.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryUpdate.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Update.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/Xor.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/XorUp.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/ExprRePrinter.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/NameResolver.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/PrefixExprReplaceVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/PrefixExprVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/ReferenceLinker.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/SmallestUIntInPromotionChain.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/TypePropagator.java
+D	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/TypePropagatorOld.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/EndOfBlock.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/GenKeywords.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/Lexer.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/ParamListFromParser.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/Parser.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/TypeFromParser.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/Yylex.java
+D	sicc/eclipsejprojs/dev/src/sicc/frontend/Yytoken.java
+D	sicc/eclipsejprojs/dev/src/sicc/preprocessors/APreprocessor.java
+D	sicc/eclipsejprojs/dev/src/sicc/preprocessors/GnuPreprocessor.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/AType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ATypeAdapter.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ATypeLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/Debug.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IAttribute.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IAttributeSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ICallableMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IConstInt.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IConstLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IField.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IFilter.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IInheritedBase.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberConsts.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberMapper.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberOperator.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IMethod.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IPhysicalMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeConsts.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeFactoryIntrinsic.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/IVirtualField.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeList.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeListFn.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeListThiscall.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/QType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/TypeDecoration.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/TypeLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/Util.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/JoinBasesAndDerived.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/JoinMemberSetListSimple.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/Typesafety.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AImmutableMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALazyHashMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALazyMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALockableLazyHashMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AModifiedLazyHashMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AProxyMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AUnmodifiableLazyHashMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/EmptyAttributeSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/EmptyMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/HashMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/JoinedMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/SingletonMemberSet.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/ConverterFilterPair.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/FilterConverterPair.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByAccessLevel.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberById.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByOperatorId.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByParamCount.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByParams.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberOperatorFilter.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/metaconsts/Zero.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleConstInt.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleConstLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleFundamentalTypeFactory.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/AUnqType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/AUnqTypeVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/IUnqFundamentalTypeFactory.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/IUnqTypeVisitor.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqArithmeticType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCallableType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCharType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqClass.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCompoundUDT.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqEnum.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFixedSizeArray.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFloatType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFunctionType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFundamentalType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqImpureIntegralType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndexRange.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndirection.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndirectionSingle.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIntType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIntegralType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqLRef.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodTypeNonVirtual.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodTypeVirtual.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqNullPtrType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqNullSlice.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqPointer.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqSIntType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqSlice.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUDT.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUIntType.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUnaryTypeExpr.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUniformComposition.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUnion.java
+D	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqVoidType.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/CClass.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/CallableMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/Field.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/InheritedBase.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/InstMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/Member.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/MemberOperator.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/PhysicalInstMember.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/Storage.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/TypeLib.java
+D	sicc/eclipsejprojs/dev/src/sicc/types/TypeUtil.java
+D	sicc/eclipsejprojs/dev/src/sicc/util/ThreadPool.java
+M	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/ExprTest0.java
+M	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test1ParseEBlock.java
+M	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test2ParseTop.java
+M	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3AssemblyDeps.java
+M	sicc/eclipsejprojs/dev/src/siccTESTS/typelib/Test0.java
+
+commit c3eb23595ba4e68361765dc3453d46c8615745af
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Mar 12 11:24:29 2017 +0100
+
+    LOCAL-1 Import all MPCC and CTYPELIB code and documents.
+
+A	sicc/drafts/old/doc/AccessLevel.cxx
+A	sicc/drafts/old/doc/ClassHierarchies.cxx
+A	sicc/drafts/old/doc/CodeTransformers.cxx
+A	sicc/drafts/old/doc/Exceptions.cxx
+A	sicc/drafts/old/doc/IPrintable.cxx
+A	sicc/drafts/old/doc/InOut.cxx
+A	sicc/drafts/old/doc/IntrinsicOperators.cxx
+A	sicc/drafts/old/doc/OverloadableCallable.cxx
+A	sicc/drafts/old/doc/SesRegEx.txt
+A	sicc/drafts/old/doc/SwitchAndJumpStatements.cxx
+A	sicc/drafts/old/doc/functionDefs.cxx
+A	sicc/drafts/old/lang/IntrinsicOperators.mpcc
+A	sicc/eclipsejprojs/dev/.classpath
+A	sicc/eclipsejprojs/dev/.gitignore
+A	sicc/eclipsejprojs/dev/.project
+A	sicc/eclipsejprojs/dev/LinkedResources
+A	sicc/eclipsejprojs/dev/src/sicc/AccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/Assembly.java
+A	sicc/eclipsejprojs/dev/src/sicc/ClassMode.java
+A	sicc/eclipsejprojs/dev/src/sicc/Diag.java
+A	sicc/eclipsejprojs/dev/src/sicc/IPreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/Id.java
+A	sicc/eclipsejprojs/dev/src/sicc/Ids.java
+A	sicc/eclipsejprojs/dev/src/sicc/MpccException.java
+A	sicc/eclipsejprojs/dev/src/sicc/NameLookup.java
+A	sicc/eclipsejprojs/dev/src/sicc/Severity.java
+A	sicc/eclipsejprojs/dev/src/sicc/TrUnit.java
+A	sicc/eclipsejprojs/dev/src/sicc/Util.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/AAstNode.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ATopBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/AccessMap.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/AccessMapEntry.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/AccessibleDeclScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/Block.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/BlockStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/BreakStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ContinueStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/Declaration.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/DeclarationList.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/DoWhileStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ExprStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/FuncDef.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IAstNode.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IDeclarationProcessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/INamedScopeElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IScope.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IScopeElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/IfStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/InitElemList.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/InitListElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/InitMappedElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/InitSeqElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/InitStructElement.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/JumpStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/LocalJumpStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/LocalJumpTargetType.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/LoopStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/NBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/Namespace.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/NamespaceBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ReturnStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ScopeElementList.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/ScopeImpl.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/Stmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/StmtList.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TopElementList.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDepRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDependencies.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitDependency.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitTop.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/TrUnitTopDefinitions.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/Typedef.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/WhileStmt.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/AAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/AstRePrinter.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ParseAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ParseSymbolsVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/PrefixAstExprReplaceVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/PrefixAstVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/ReferenceLinker.java
+A	sicc/eclipsejprojs/dev/src/sicc/ast/visitors/TypePropagator.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/AExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Add.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/AddUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/AddressOf.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/And.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/AndUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Args.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ArithPromotion.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Assign.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/BinArith.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/BinExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/BinLogic.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/BinUpdate.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/BitNot.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Call.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Cast.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Comparison.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ConstIntegerExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Constant.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Conv.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Deref.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Div.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/DivUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/EqComp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Equal.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Expr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Greater.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/GreaterEq.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/IExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/IdExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Index.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/IndexRangeBeginLast.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/InitList.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LAnd.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LAndUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LNot.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LOr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LOrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LeafExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Less.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LessEq.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LiteralInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/LoadFromRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/MemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Mod.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ModUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Mul.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/MulUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Neg.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/NotEqual.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Nullptr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/NumConst.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Or.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/OrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/PointerMemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/PostDec.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/PostInc.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/PreDec.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/PreInc.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefField.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefFunc.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefGeneralization.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefInstField.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefLocalField.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RefStaticField.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ReferenceMemberAccess.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/RelComp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ReverseArithPromotion.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Shift.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Shl.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ShlUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ShortcutLogic.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Shr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/ShrUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Sub.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/SubUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/TrinaryExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/TrinarySelect.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryPlus.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/UnaryUpdate.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Update.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/Xor.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/XorUp.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/ExprRePrinter.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/NameResolver.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/PrefixExprReplaceVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/PrefixExprVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/ReferenceLinker.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/SmallestUIntInPromotionChain.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/TypePropagator.java
+A	sicc/eclipsejprojs/dev/src/sicc/exprs/visitors/TypePropagatorOld.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/EndOfBlock.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/GenKeywords.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/Lexer.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/ParamListFromParser.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/Parser.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/TypeFromParser.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/Yylex.java
+A	sicc/eclipsejprojs/dev/src/sicc/frontend/Yytoken.java
+A	sicc/eclipsejprojs/dev/src/sicc/preprocessors/APreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/preprocessors/GnuPreprocessor.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/AType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ATypeAdapter.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ATypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/Debug.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IAttribute.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IAttributeSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ICallableMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IConstLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IField.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IFilter.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IInheritedBase.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberConsts.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberMapper.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberOperator.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IMethod.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IPhysicalMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeConsts.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeFactoryIntrinsic.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ITypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/IVirtualField.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeList.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeListFn.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/ParameterTypeListThiscall.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/QType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/TypeDecoration.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/TypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/Util.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/JoinBasesAndDerived.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/JoinMemberSetListSimple.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/algorithm/Typesafety.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AImmutableMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALazyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/ALockableLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AModifiedLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AProxyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/AUnmodifiableLazyHashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/EmptyAttributeSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/EmptyMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/HashMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/JoinedMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/containers/SingletonMemberSet.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/ConverterFilterPair.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/FilterConverterPair.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByAccessLevel.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberById.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByOperatorId.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByParamCount.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByParams.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberByType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/filters/MemberOperatorFilter.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/metaconsts/Zero.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleConstInt.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleConstLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/simple/SimpleFundamentalTypeFactory.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/AUnqType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/AUnqTypeVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/IUnqFundamentalTypeFactory.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/IUnqTypeVisitor.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqArithmeticType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCallableType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCharType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqClass.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqCompoundUDT.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqEnum.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFixedSizeArray.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFloatType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFunctionType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqFundamentalType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqImpureIntegralType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndexRange.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndirection.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIndirectionSingle.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqIntegralType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqLRef.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodTypeNonVirtual.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqMethodTypeVirtual.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqNullPtrType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqNullSlice.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqPointer.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqSIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqSlice.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUDT.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUIntType.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUnaryTypeExpr.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUniformComposition.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqUnion.java
+A	sicc/eclipsejprojs/dev/src/sicc/typelib/unqualified/UnqVoidType.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/CClass.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/CallableMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/Field.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/InheritedBase.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/InstMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/Member.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/MemberOperator.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/PhysicalInstMember.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/Storage.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/TypeLib.java
+A	sicc/eclipsejprojs/dev/src/sicc/types/TypeUtil.java
+A	sicc/eclipsejprojs/dev/src/sicc/util/ThreadPool.java
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/ExprTest0.java
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/T2-0.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/T2-1.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/T2-2.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test1ParseEBlock.java
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test2ParseTop.java
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3AssemblyDeps.java
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t0a.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t0b.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t0c.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t0d.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t0r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t1c.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t1r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t2a.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t2b.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t2r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t3r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t4a.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t4b.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t4r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t5a.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t5r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t5w.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t6r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t7a.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t7r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/Test3Files/t8r.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/sicc/fibonacci.sic
+A	sicc/eclipsejprojs/dev/src/siccTESTS/typelib/Test0.java
+A	sicc/gen/exprs/genLeafsAndVisitors.pl
+A	sicc/gen/exprs/hier.txt
+A	sicc/gen/exprs/leaf.txt
+A	sicc/gen/exprs/leaf2.txt
+A	sicc/gen/exprs/listGenJava.pl
+A	sicc/gen/exprs/test/AExprVisitor.java
+A	sicc/gen/exprs/test/Add.java
+A	sicc/gen/exprs/test/AddUp.java
+A	sicc/gen/exprs/test/AdressOf.java
+A	sicc/gen/exprs/test/And.java
+A	sicc/gen/exprs/test/AndUp.java
+A	sicc/gen/exprs/test/Assign.java
+A	sicc/gen/exprs/test/BitNot.java
+A	sicc/gen/exprs/test/Deref.java
+A	sicc/gen/exprs/test/Div.java
+A	sicc/gen/exprs/test/DivUp.java
+A	sicc/gen/exprs/test/Equal.java
+A	sicc/gen/exprs/test/Greater.java
+A	sicc/gen/exprs/test/GreaterThan.java
+A	sicc/gen/exprs/test/IExprVisitor.java
+A	sicc/gen/exprs/test/Index.java
+A	sicc/gen/exprs/test/LAnd.java
+A	sicc/gen/exprs/test/LAndUp.java
+A	sicc/gen/exprs/test/LNot.java
+A	sicc/gen/exprs/test/LOr.java
+A	sicc/gen/exprs/test/LOrUp.java
+A	sicc/gen/exprs/test/Less.java
+A	sicc/gen/exprs/test/LessThan.java
+A	sicc/gen/exprs/test/Mod.java
+A	sicc/gen/exprs/test/ModUp.java
+A	sicc/gen/exprs/test/Mul.java
+A	sicc/gen/exprs/test/MulUp.java
+A	sicc/gen/exprs/test/Neg.java
+A	sicc/gen/exprs/test/NotEqual.java
+A	sicc/gen/exprs/test/Or.java
+A	sicc/gen/exprs/test/OrUp.java
+A	sicc/gen/exprs/test/PostDec.java
+A	sicc/gen/exprs/test/PostInc.java
+A	sicc/gen/exprs/test/PreDec.java
+A	sicc/gen/exprs/test/PreInc.java
+A	sicc/gen/exprs/test/Sar.java
+A	sicc/gen/exprs/test/SarUp.java
+A	sicc/gen/exprs/test/Shl.java
+A	sicc/gen/exprs/test/ShlUp.java
+A	sicc/gen/exprs/test/SliceBegEnd.java
+A	sicc/gen/exprs/test/Slr.java
+A	sicc/gen/exprs/test/SlrUp.java
+A	sicc/gen/exprs/test/Sub.java
+A	sicc/gen/exprs/test/SubUp.java
+A	sicc/gen/exprs/test/TrinarySelect.java
+A	sicc/gen/exprs/test/UnaryPlus.java
+A	sicc/gen/exprs/test/Xor.java
+A	sicc/gen/exprs/test/XorUp.java
+A	sicc/siclib/--forkjoin.cxx
+A	sicc/siclib/algorithmdecls.cxx
+A	sicc/siclib/slicealgorithms.cxx
+A	sicc/siclib/threads.cxx
+A	sicc/yacc/Lexer.lex
+A	sicc/yacc/Parser.y
+A	sicc/yacc/genKeywords.pl
+A	sicc/yacc/keywords.txt
+A	sicc/yacc/makeParser.sh
+
+commit a8a1778afbe4ff88b6180076848b9f67d60a8796
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Mar 12 09:08:21 2017 +0100
+
+    LOCAL-1 Move archiving (sicc.ar) code from eclipse directory to code directories.
+
+M	ar/eclipsejprojs/dev/.project
+A	ar/eclipsejprojs/dev/LinkedResources
+D	ar/eclipsejprojs/dev/src/sicc/ar/ArEntry.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileInputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileOutputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/CountingInputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/CountingOutputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/FileEntry.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/LimitedCountingInputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/MultiFileInputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/MultiFileOutputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/SicPackage.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/SicPackageOutputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/Util.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/ZipFileEntry.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/ZipMultiFileInputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/ZipMultiFileOutputStream.java
+D	ar/eclipsejprojs/dev/src/siccTESTS/ar/ArTest.java
+D	ar/eclipsejprojs/dev/src/siccTESTS/ar/EchoTest.java
+D	ar/eclipsejprojs/dev/src/siccTESTS/ar/FileSeqs.java
+A	ar/java/ArEntry.java
+A	ar/java/ArMultiFileInputStream.java
+A	ar/java/ArMultiFileOutputStream.java
+A	ar/java/CountingInputStream.java
+A	ar/java/CountingOutputStream.java
+A	ar/java/FileEntry.java
+A	ar/java/LimitedCountingInputStream.java
+A	ar/java/MultiFileInputStream.java
+A	ar/java/MultiFileOutputStream.java
+A	ar/java/SicPackage.java
+A	ar/java/SicPackageOutputStream.java
+A	ar/java/Util.java
+A	ar/java/ZipFileEntry.java
+A	ar/java/ZipMultiFileInputStream.java
+A	ar/java/ZipMultiFileOutputStream.java
+A	ar/jtests/ArTest.java
+A	ar/jtests/EchoTest.java
+A	ar/jtests/FileSeqs.java
+
+commit 4534e80820b9c3fa96237d2d534a4b30caffe290
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Feb 26 22:13:05 2017 +0100
+
+    LOCAL-1 stuff
+
+A	sicc/drafts/Ctors.cxx
+M	sicc/drafts/OverloadAndOverride.cxx
+A	sicc/drafts/Synchronization.cxx
+
+commit 166fe3cf52d9b71673b435b47b26e397b1e3baf3
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Feb 13 18:42:26 2017 +0100
+
+    LOCAL-1 Working on packages.
+
+M	ar/eclipsejprojs/dev/src/sicc/ar/ArEntry.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/FileEntry.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/SicPackageOutputStream.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/ZipFileEntry.java
+
+commit c82988fce09f423f4b239d4578bb182b9fe0b19d
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Feb 13 16:03:20 2017 +0100
+
+    LOCAL-1 Use LimitedCountingInputStream in ArMultiFileInputStream. Expecting faster skip (not sure).
+
+M	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileInputStream.java
+
+commit 2a64a4547240a549198851fcf51ac6f63c0c59fe
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Feb 13 15:57:08 2017 +0100
+
+    LOCAL-1 Working on packages.
+
+M	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/LimitedCountingInputStream.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/MultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/SicPackage.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/SicPackageOutputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/Util.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/ZipMultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/siccTESTS/ar/ArTest.java
+M	ar/eclipsejprojs/dev/src/siccTESTS/ar/EchoTest.java
+A	ar/eclipsejprojs/dev/src/siccTESTS/ar/FileSeqs.java
+A	ar/test/seq5.a.gz
+A	ar/test/seq5a.a.gz
+A	ar/test/seq5s.a.gz
+
+commit 2ab3f43df3a44d426e8003aae2ec2c7b10260f31
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Feb 13 01:26:49 2017 +0100
+
+    LOCAL-1 Add one more archive test file.
+
+A	ar/test/seq5.a
+
+commit 74d9d894df3027bd438135045a932fc06a9a0d48
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Feb 13 01:20:19 2017 +0100
+
+    LOCAL-1 Work on archives.
+
+M	ar/eclipsejprojs/dev/.classpath
+M	ar/eclipsejprojs/dev/src/sicc/ar/ArEntry.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/ArMultiFileOutputStream.java
+M	ar/eclipsejprojs/dev/src/sicc/ar/CountingInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/FileEntry.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/MultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/MultiFileOutputStream.java
+D	ar/eclipsejprojs/dev/src/sicc/ar/TarEntry.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/ZipFileEntry.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/ZipMultiFileInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/ZipMultiFileOutputStream.java
+A	ar/eclipsejprojs/dev/src/siccTESTS/ar/EchoTest.java
+A	ar/test/seq5a.a
+A	ar/test/seq5s.a
+
+commit 2dd1a56c377c690e3c5aff5a13f1c47794b85ca7
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Feb 12 01:59:39 2017 +0100
+
+    LOCAL-1 Add archive code for packages.
+
+A	ar/eclipsejprojs/dev/.classpath
+A	ar/eclipsejprojs/dev/.gitignore
+A	ar/eclipsejprojs/dev/.project
+A	ar/eclipsejprojs/dev/src/sicc/ar/ArEntry.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/CountingInputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/CountingOutputStream.java
+A	ar/eclipsejprojs/dev/src/sicc/ar/TarEntry.java
+
+commit f3d441af1171446c0de98bcf9f9683b4dcdbceb8
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Feb 4 17:31:48 2017 +0100
+
+    LOCAL-1 Drafting parsing stages.
+
+A	sicc/drafts/ParsingStages.cxx
+
+commit 134091250cba9ed639e9651c90545daa5e870607
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Tue Jan 31 21:20:58 2017 +0100
+
+    LOCAL-1 Drafting sicc stuff.
+
+M	sicc/drafts/UsingImport.cxx
+
+commit 02d1b69e10bf9eba02a1481cb682bdd8867729b4
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Mon Jan 30 22:15:30 2017 +0100
+
+    LOCAL-1 Drafting sicc stuff.
+
+A	sicc/drafts/CtorUninit.cxx
+A	sicc/drafts/UsingImport.cxx
+
+commit 2c9161721ccc51908b493009cb050685e3dd3239
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Jan 22 14:03:46 2017 +0100
+
+    LOCAL-1 drafts
+
+M	asm/misc/0.txt
+
+commit 2d2a927a20782f38558fa397d6a27224df4867ec
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Jan 15 20:54:02 2017 +0100
+
+    LOCAL-1 Work on command line parser contructors.
+
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/FixedContainerProcessor.java
+M	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Test1ReflectCmdlnReader.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/frontend/cl/Parser.java
+M	dodl/java/reflect/ReflectContainerProcessor.java
+M	dodl/jyacc/CmdlnParser.y
+
+commit 615e06e677d0309ea3f3daa2fd4ed38e95f08671
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Jan 14 14:26:17 2017 +0100
+
+    LOCAL-1 Re-draft sicc stuff (method overload/override).
+
+A	sicc/drafts/OverloadAndOverride.cxx
+
+commit 8408ce4437298772cd00437d2734c12a7d69583a
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Jan 14 00:57:24 2017 +0100
+
+    LOCAL-1 Work on dodl command line constructors (note: code duplication).
+
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/FixedContainerProcessor.java
+A	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Opt0List.java
+M	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Test1ReflectCmdlnReader.java
+M	dodl/java/IContainerProcessor.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/reflect/ReflectContainerProcessor.java
+
+commit 77a2eed5d20e8f9fbec133199e01bcae585c8ff0
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Fri Jan 13 14:25:47 2017 +0100
+
+    LOCAL-1 Work on dodl command line parsing.
+
+M	diag/java/Diag.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/AsciiCharMap.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/ShortcutIds.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/reflect/CmdlnReflectClassInfo.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/reflect/ReflectCmdlnReader.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/ReflectClassInfo.java
+A	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Opt0.java
+M	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Test1ReflectCmdlnReader.java
+A	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Test2PrintCmdlnHelp.java
+M	dodl/java/ClassInfo.java
+M	dodl/java/FieldHandler.java
+M	dodl/java/FixedFieldHandler.java
+M	dodl/java/cmdln/CmdlnReader.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/frontend/cl/Parser.java
+M	dodl/java/frontend/cl/Yylex.java
+M	dodl/java/reflect/BoolFieldHandler.java
+M	dodl/java/reflect/EnumFieldHandler.java
+M	dodl/java/reflect/FloatFieldHandler.java
+M	dodl/java/reflect/IntFieldHandler.java
+M	dodl/java/reflect/OptBoolFieldHandler.java
+M	dodl/java/reflect/OptFloatFieldHandler.java
+M	dodl/java/reflect/OptIntFieldHandler.java
+M	dodl/java/reflect/ReflectFieldHandler.java
+M	dodl/java/reflect/ReflectInstanceHandler.java
+M	dodl/java/reflect/ReflectTypeLib.java
+M	dodl/java/reflect/StringFieldHandler.java
+M	dodl/java/reflect/annot/Help.java
+M	dodl/jyacc/CmdlnLexer.lex
+M	dodl/jyacc/CmdlnParser.y
+
+commit 514bc14b3f332da58961d1ed4c19c4f8c3d97222
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Jan 8 20:10:26 2017 +0100
+
+    LOCAL-1 Work on dodl command line reader.
+
+M	bparser/java/UBlockReader.java
+M	diag/java/Diag.java
+A	dodl/eclipsejprojs/dev/.checkstyle
+M	dodl/eclipsejprojs/dev/.classpath
+M	dodl/eclipsejprojs/dev/.project
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/FixedContainerProcessor.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/reflect/ReflectCmdlnReader.java
+A	dodl/eclipsejprojs/dev/src/siccTESTS/dodl/Test1ReflectCmdlnReader.java
+M	dodl/java/IContainerProcessor.java
+M	dodl/java/cmdln/CmdlnReader.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/frontend/cl/Parser.java
+M	dodl/java/frontend/cl/Yylex.java
+M	dodl/java/reflect/ReflectContainerProcessor.java
+M	dodl/java/reflect/ReflectTypeLib.java
+M	dodl/jtests/Test0Reflect.java
+M	dodl/jyacc/CmdlnLexer.lex
+M	dodl/jyacc/CmdlnParser.y
+
+commit 209d5ad41d500d37e02c27f165368c57b16aa802
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Jan 7 10:24:46 2017 +0100
+
+    LOCAL-1 First commit from 64-bit linux.
+
+D	.swp
+
+commit 79f8c80aa9d4aaf87de9468c90e4b4b6b0383ff2
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Thu Jan 5 14:08:45 2017 +0100
+
+    LOCAL-1 drafting around.
+
+A	asm/misc/0.txt
+A	dodl/drafts/binaryFormat.txt
+
+commit b5f49391fa499dad8c3dfd788eaa9db2e7915473
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Dec 17 21:27:16 2016 +0100
+
+    LOCAL-1 Read command line attributes.
+
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/AsciiCharMap.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/SwitchArgs.java
+M	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/SwitchMap.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/reflect/CmdlnReflectClassInfo.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/reflect/CmdlnReflectTypeLib.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/ReflectClassInfo.java
+M	dodl/java/ClassInfo.java
+M	dodl/java/reflect/ReflectTypeLib.java
+
+commit c80fe094ee632c41f9f52fb5624ce945eb502cfe
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Dec 11 15:48:30 2016 +0100
+
+    LOCAL-1 Working on dodl command line parser...
+
+M	diag/java/Diag.java
+M	diag/java/DiagException.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/ValueTokenList.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/frontend/cl/EndOfBlock.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/frontend/cl/Yytoken.java
+M	dodl/java/cmdln/CmdlnReader.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/frontend/cl/Parser.java
+M	dodl/java/frontend/cl/Yylex.java
+M	dodl/jyacc/CmdlnLexer.lex
+M	dodl/jyacc/CmdlnParser.y
+
+commit ddc11768987f9e677f908d3aede51ee72de89612
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Dec 10 21:25:59 2016 +0100
+
+    LOCAL-1 Move diag code.
+
+M	diag/eclipsejprojs/dev/.project
+M	dodl/eclipsejprojs/dev/.project
+M	dodl/eclipsejprojs/dev/LinkedResources
+
+commit cba19c3a659a32063d5a02ce0edc88933b75f1ff
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Dec 10 21:25:05 2016 +0100
+
+    LOCAL-1 Move diag code.
+
+D	diag/eclipsejprojs/dev/src/sicc/diag/Diag.java
+D	diag/eclipsejprojs/dev/src/sicc/diag/DiagException.java
+D	diag/eclipsejprojs/dev/src/sicc/diag/Severity.java
+A	diag/java/Diag.java
+A	diag/java/DiagException.java
+A	diag/java/Severity.java
+
+commit 3702169a7bd918486260eb144144e2ea125f1a0d
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Dec 10 20:53:46 2016 +0100
+
+    LOCAL-1 Add diagnostic message package
+
+A	diag/eclipsejprojs/dev/.classpath
+A	diag/eclipsejprojs/dev/.gitignore
+A	diag/eclipsejprojs/dev/.project
+A	diag/eclipsejprojs/dev/LinkedResources
+A	diag/eclipsejprojs/dev/src/sicc/diag/Diag.java
+A	diag/eclipsejprojs/dev/src/sicc/diag/DiagException.java
+A	diag/eclipsejprojs/dev/src/sicc/diag/Severity.java
+
+commit f99902b236cf41e115b288017a664b4efa5e9b78
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Dec 10 18:31:22 2016 +0100
+
+    LOCAL-1 Generate dodl command line parser java files (doesn't compile yet)
+
+A	.swp
+M	dodl/eclipsejprojs/dev/.project
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/frontend/cl/Lexer.java
+M	dodl/java/cmdln/ParserHelper.java
+A	dodl/java/frontend/cl/Parser.java
+A	dodl/java/frontend/cl/Yylex.java
+M	dodl/java/frontend/od/s/Parser.java
+M	dodl/jyacc/CmdlnLexer.lex
+M	dodl/jyacc/CmdlnParser.y
+M	dodl/jyacc/makeParser.sh
+
+commit 0d1bff78b26575b629541a1bacdd44eb3ba7a2be
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Fri Dec 9 15:59:35 2016 +0100
+
+    LOCAL-1 Dodling on command line...
+
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/BoolValueToken.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/FixedContainerProcessor.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/Block.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/BlockValueToken.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/ScalarValueToken.java
+M	dodl/java/ValueToken.java
+M	dodl/java/cmdln/CmdlnReader.java
+M	dodl/java/cmdln/ParserHelper.java
+M	dodl/jyacc/CmdlnParser.y
+A	sicc/drafts/ExceptionStack.cxx
+
+commit 953624c57de5074fe50c9e78054b2fcd065c6c3b
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Dec 4 13:32:05 2016 +0100
+
+    LOCAL-1 Dodling around on the command line parser.
+
+M	dodl/eclipsejprojs/dev/.project
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/AsciiCharMap.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/SwitchArgs.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/cmdln/SwitchMap.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/annot/ShortSwitchOff.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/annot/ShortSwitchOn.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/annot/SwitchOff.java
+A	dodl/eclipsejprojs/dev/src/sicc/dodl/reflect/annot/SwitchOn.java
+M	dodl/java/IContainerProcessor.java
+M	dodl/java/ShortcutMap.java
+A	dodl/java/cmdln/ParserHelper.java
+M	dodl/java/reflect/ReflectContainerProcessor.java
+M	dodl/jyacc/CmdlnLexer.lex
+M	dodl/jyacc/CmdlnParser.y
+
+commit 7b1867aeb757f350c5532b398592716e34f4f930
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Dec 4 09:44:49 2016 +0100
+
+    LOCAL-1 Add jutil (and doml around a bit)
+
+A	dodl/drafts/mdoml.cxx
+A	dodl/drafts/preprocessing.cxx
+A	doml/draft/doml0.cxx
+A	jutil/java/IModProtectable.java
+A	jutil/java/ISecludableList.java
+A	jutil/java/IVersioned.java
+A	jutil/java/Iterables.java
+A	jutil/java/except/UnmodifiableIterableException.java
+A	jutil/java/function/Consumer.java
+A	jutil/java/versioned/IVersionedCollection.java
+A	jutil/java/versioned/IVersionedIterable.java
+A	jutil/java/versioned/IVersionedList.java
+A	jutil/java/versioned/IVersionedMap.java
+A	jutil/java/versioned/IVersionedModProtectable.java
+A	jutil/java/versioned/IVersionedSet.java
+A	jutil/java/versioned/VersionedArrayList.java
+A	jutil/java/versioned/VersionedLinkedHashSet.java
+A	jutil/java/versioned/VersionedTreeSet.java
+A	jutil/java/versioned/decos/IVersionedWithForceableVersion.java
+A	jutil/java/versioned/decos/ModHookGenCollectionDeco.java
+A	jutil/java/versioned/decos/ModHookGenListDeco.java
+A	jutil/java/versioned/decos/ModHookGenMapDeco.java
+A	jutil/java/versioned/decos/ModHookGenSetDeco.java
+A	jutil/java/versioned/decos/VersionedGenListDeco.java
+A	jutil/java/versioned/decos/VersionedGenMapDeco.java
+A	jutil/java/versioned/decos/VersionedGenSetDeco.java
+A	jutil/jtests/OldTest0.java
+A	jutil/jtests/Test_Collections.java
+
+commit 3def2ec4cb5fbe0d0f47a2c03d100e0463666c33
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Nov 27 20:55:58 2016 +0100
+
+    LOCAL-1 Get basic dodl reflections test running.
+
+A	dodl/eclipsejprojs/dev/.classpath
+A	dodl/eclipsejprojs/dev/.gitignore
+A	dodl/eclipsejprojs/dev/.project
+A	dodl/eclipsejprojs/dev/LinkedResources
+M	dodl/java/ClassInfo.java
+M	dodl/java/DodlException.java
+M	dodl/java/FieldHandler.java
+M	dodl/java/FieldMap.java
+M	dodl/java/FixedFieldHandler.java
+M	dodl/java/FloatRange.java
+M	dodl/java/IContainerProcessor.java
+M	dodl/java/InstanceHandler.java
+M	dodl/java/InstanceMap.java
+M	dodl/java/IntRange.java
+M	dodl/java/NumRange.java
+M	dodl/java/ScId.java
+M	dodl/java/Settings.java
+M	dodl/java/ShortcutMap.java
+M	dodl/java/StringFieldHandler.java
+M	dodl/java/TrUnit.java
+M	dodl/java/Util.java
+M	dodl/java/ValueToken.java
+M	dodl/java/cmdln/CmdlnReader.java
+M	dodl/java/frontend/od/Lexer.java
+M	dodl/java/frontend/od/s/Parser.java
+M	dodl/java/od/AstNode.java
+M	dodl/java/od/AstNodeImpl.java
+M	dodl/java/od/Block.java
+M	dodl/java/od/CInfo.java
+M	dodl/java/od/CInfoMap.java
+M	dodl/java/od/Instance.java
+M	dodl/java/od/InstanceInheritance.java
+M	dodl/java/od/OdValueToken.java
+M	dodl/java/od/SParserState.java
+M	dodl/java/od/Scope.java
+M	dodl/java/od/ScopeElement.java
+M	dodl/java/od/ScopeElementImpl.java
+M	dodl/java/od/ScopeElementList.java
+M	dodl/java/od/ScopeImpl.java
+M	dodl/java/reflect/BoolFieldHandler.java
+M	dodl/java/reflect/EnumFieldHandler.java
+M	dodl/java/reflect/EnumMap.java
+M	dodl/java/reflect/FloatFieldHandler.java
+M	dodl/java/reflect/IntFieldHandler.java
+M	dodl/java/reflect/OptBoolFieldHandler.java
+M	dodl/java/reflect/OptFloatFieldHandler.java
+M	dodl/java/reflect/OptIntFieldHandler.java
+M	dodl/java/reflect/ReflectContainerProcessor.java
+M	dodl/java/reflect/ReflectFieldHandler.java
+M	dodl/java/reflect/ReflectInstanceHandler.java
+M	dodl/java/reflect/ReflectTypeLib.java
+M	dodl/java/reflect/StringFieldHandler.java
+M	dodl/java/reflect/annot/AttributedValue.java
+M	dodl/java/reflect/annot/FloatRangeMinMax.java
+M	dodl/java/reflect/annot/Help.java
+M	dodl/java/reflect/annot/Hidden.java
+M	dodl/java/reflect/annot/Id.java
+M	dodl/java/reflect/annot/Instance.java
+M	dodl/java/reflect/annot/IntRangeMinMax.java
+M	dodl/java/reflect/annot/MainField.java
+M	dodl/java/reflect/annot/MultipleStatementCollection.java
+M	dodl/java/reflect/annot/NoOverride.java
+M	dodl/java/reflect/annot/Partial.java
+M	dodl/java/reflect/annot/Reference.java
+M	dodl/java/reflect/annot/Rename.java
+M	dodl/java/reflect/annot/Sealed.java
+M	dodl/java/reflect/annot/Shortcut.java
+M	dodl/java/reflect/dodl/Container.java
+M	dodl/java/reflect/dodl/DodlObject.java
+M	dodl/java/reflect/dodl/EnumValue.java
+M	dodl/java/reflect/dodl/Field.java
+M	dodl/java/reflect/dodl/FieldContainer.java
+M	dodl/java/reflect/dodl/FieldMap.java
+M	dodl/java/reflect/dodl/Language.java
+M	dodl/java/reflect/dodl/Type.java
+M	dodl/java/reflect/dodl/TypeEnum.java
+M	dodl/java/reflect/dodl/TypeMap.java
+M	dodl/java/reflect/dodl/TypeSet.java
+M	dodl/jtests/Test0Reflect.java
+
+commit 40d29608bc4c576b650a4437f6acd0b84f3b3476
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sun Nov 27 19:37:43 2016 +0100
+
+    LOCAL-1 Add a script that links all files of a directory to an eclipse project.
+
+A	bparser/eclipsejprojs/dev/LinkedResources
+A	tools/UpdateLinkedResources.pl
+
+commit 6c49c3deb60d2358eaf6e628fedaa049380e8bae
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Nov 26 17:50:48 2016 +0100
+
+    LOCAL-1 Add dodl source
+
+A	dodl/dodllib/dodl0.od
+A	dodl/dodllib/oil.od
+A	dodl/java/ClassInfo.java
+A	dodl/java/DodlException.java
+A	dodl/java/FieldHandler.java
+A	dodl/java/FieldMap.java
+A	dodl/java/FixedFieldHandler.java
+A	dodl/java/FloatRange.java
+A	dodl/java/IContainerProcessor.java
+A	dodl/java/InstanceHandler.java
+A	dodl/java/InstanceMap.java
+A	dodl/java/IntRange.java
+A	dodl/java/NumRange.java
+A	dodl/java/ScId.java
+A	dodl/java/Settings.java
+A	dodl/java/ShortcutMap.java
+A	dodl/java/StringFieldHandler.java
+A	dodl/java/TrUnit.java
+A	dodl/java/Util.java
+A	dodl/java/ValueToken.java
+A	dodl/java/cmdln/CmdlnReader.java
+A	dodl/java/frontend/od/Lexer.java
+A	dodl/java/frontend/od/Yylex.java
+A	dodl/java/frontend/od/s/Parser.java
+A	dodl/java/od/AstNode.java
+A	dodl/java/od/AstNodeImpl.java
+A	dodl/java/od/Block.java
+A	dodl/java/od/CInfo.java
+A	dodl/java/od/CInfoMap.java
+A	dodl/java/od/Instance.java
+A	dodl/java/od/InstanceInheritance.java
+A	dodl/java/od/OdValueToken.java
+A	dodl/java/od/SParserState.java
+A	dodl/java/od/Scope.java
+A	dodl/java/od/ScopeElement.java
+A	dodl/java/od/ScopeElementImpl.java
+A	dodl/java/od/ScopeElementList.java
+A	dodl/java/od/ScopeImpl.java
+A	dodl/java/reflect/BoolFieldHandler.java
+A	dodl/java/reflect/EnumFieldHandler.java
+A	dodl/java/reflect/EnumMap.java
+A	dodl/java/reflect/FloatFieldHandler.java
+A	dodl/java/reflect/IntFieldHandler.java
+A	dodl/java/reflect/OptBoolFieldHandler.java
+A	dodl/java/reflect/OptFloatFieldHandler.java
+A	dodl/java/reflect/OptIntFieldHandler.java
+A	dodl/java/reflect/ReflectContainerProcessor.java
+A	dodl/java/reflect/ReflectFieldHandler.java
+A	dodl/java/reflect/ReflectInstanceHandler.java
+A	dodl/java/reflect/ReflectTypeLib.java
+A	dodl/java/reflect/StringFieldHandler.java
+A	dodl/java/reflect/annot/AttributedValue.java
+A	dodl/java/reflect/annot/FloatRangeMinMax.java
+A	dodl/java/reflect/annot/Help.java
+A	dodl/java/reflect/annot/Hidden.java
+A	dodl/java/reflect/annot/Id.java
+A	dodl/java/reflect/annot/Instance.java
+A	dodl/java/reflect/annot/IntRangeMinMax.java
+A	dodl/java/reflect/annot/MainField.java
+A	dodl/java/reflect/annot/MultipleStatementCollection.java
+A	dodl/java/reflect/annot/NoOverride.java
+A	dodl/java/reflect/annot/Partial.java
+A	dodl/java/reflect/annot/Reference.java
+A	dodl/java/reflect/annot/Rename.java
+A	dodl/java/reflect/annot/Sealed.java
+A	dodl/java/reflect/annot/Shortcut.java
+A	dodl/java/reflect/dodl/Container.java
+A	dodl/java/reflect/dodl/DodlObject.java
+A	dodl/java/reflect/dodl/EnumValue.java
+A	dodl/java/reflect/dodl/Field.java
+A	dodl/java/reflect/dodl/FieldContainer.java
+A	dodl/java/reflect/dodl/FieldMap.java
+A	dodl/java/reflect/dodl/Language.java
+A	dodl/java/reflect/dodl/Type.java
+A	dodl/java/reflect/dodl/TypeEnum.java
+A	dodl/java/reflect/dodl/TypeMap.java
+A	dodl/java/reflect/dodl/TypeSet.java
+A	dodl/jtests/Test0Reflect.java
+A	dodl/jyacc/CmdlnLexer.lex
+A	dodl/jyacc/CmdlnParser.y
+A	dodl/jyacc/Lexer.lex
+A	dodl/jyacc/SParser.y
+A	dodl/jyacc/TypedParser.y
+A	dodl/jyacc/genKeywords.pl
+A	dodl/jyacc/keywords.txt
+A	dodl/jyacc/makeParser.sh
+
+commit feffa1350ad03cbc1323ae0e02286828f1b900d3
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Nov 26 17:36:10 2016 +0100
+
+    LOCAL-1 Restructure bparser
+
+D	bparser/jtests/ExFiles/LongBlocks.txt
+D	bparser/jtests/ExFiles/RawStrings.txt
+M	bparser/jtests/Test0.java
+A	bparser/test/LongBlocks.txt
+A	bparser/test/RawStrings.txt
+D	drafts/ProvValid.cxx
+D	drafts/StringLiterals.cxx
+D	eclipsejprojs/Bparser/.classpath
+D	eclipsejprojs/Bparser/.gitignore
+D	eclipsejprojs/Bparser/.project
+A	sicc/drafts/ProvValid.cxx
+A	sicc/drafts/StringLiterals.cxx
+
+commit 260983cec01820a98875d3ff1993403aed74cc60
+Author: HeidiWindkraftwerk <nutzer@lea0x01l32>
+Date:   Sat Nov 26 17:28:09 2016 +0100
+
+    LOCAL-1 Restructure bparser...
+
+A	bparser/eclipsejprojs/dev/.classpath
+A	bparser/eclipsejprojs/dev/.gitignore
+A	bparser/eclipsejprojs/dev/.project
+A	bparser/java/Block.java
+A	bparser/java/BlockEntry.java
+A	bparser/java/FilePos.java
+A	bparser/java/GCCPreprocessorHandler.java
+A	bparser/java/IPreprocessor.java
+A	bparser/java/LegacyParser.java
+A	bparser/java/ModularParser.java
+A	bparser/java/Parser.java
+A	bparser/java/PreprocessorHandler.java
+A	bparser/java/SBlock.java
+A	bparser/java/SpecialTokens.java
+A	bparser/java/UBlockReader.java
+A	bparser/java/Util.java
+A	bparser/jtests/ExFiles/LongBlocks.txt
+A	bparser/jtests/ExFiles/RawStrings.txt
+A	bparser/jtests/Test0.java
+A	bparser/jtests/Test1Echo.java
+A	bparser/jtests/Test2Dot.java
+A	bparser/jtests/Test3ReaderPerf.java
+A	bparser/jtests/Test4ParserPerf.java
+D	java/sicc/bparser/Block.java
+D	java/sicc/bparser/BlockEntry.java
+D	java/sicc/bparser/FilePos.java
+D	java/sicc/bparser/GCCPreprocessorHandler.java
+D	java/sicc/bparser/IPreprocessor.java
+D	java/sicc/bparser/LegacyParser.java
+D	java/sicc/bparser/ModularParser.java
+D	java/sicc/bparser/Parser.java
+D	java/sicc/bparser/PreprocessorHandler.java
+D	java/sicc/bparser/SBlock.java
+D	java/sicc/bparser/SpecialTokens.java
+D	java/sicc/bparser/UBlockReader.java
+D	java/sicc/bparser/Util.java
+D	java/siccTESTS/bparser/ExFiles/LongBlocks.txt
+D	java/siccTESTS/bparser/ExFiles/RawStrings.txt
+D	java/siccTESTS/bparser/Test0.java
+D	java/siccTESTS/bparser/Test1Echo.java
+D	java/siccTESTS/bparser/Test2Dot.java
+D	java/siccTESTS/bparser/Test3ReaderPerf.java
+D	java/siccTESTS/bparser/Test4ParserPerf.java
+
+commit d6cc7284ab9bc01eeec159cc729654707a988473
+Author: nutzer@lea0x01l32 <nutzer@lea0x01l32>
+Date:   Sat Nov 26 16:56:10 2016 +0100
+
+    LOCAL-1 Fix project paths.
+
+M	eclipsejprojs/Bparser/.project
+
+commit e756827c2d7143fd2bb82c543b3f72421b94f1f4
+Author: nutzer@lea0x01l32 <nutzer@lea0x01l32>
+Date:   Sat Nov 26 16:50:00 2016 +0100
+
+    LOCAL-1 Add bparser project.
+
+A	.gitignore
+A	eclipsejprojs/Bparser/.classpath
+A	eclipsejprojs/Bparser/.gitignore
+A	eclipsejprojs/Bparser/.project
+A	java/sicc/bparser/Block.java
+A	java/sicc/bparser/BlockEntry.java
+A	java/sicc/bparser/FilePos.java
+A	java/sicc/bparser/GCCPreprocessorHandler.java
+A	java/sicc/bparser/IPreprocessor.java
+A	java/sicc/bparser/LegacyParser.java
+A	java/sicc/bparser/ModularParser.java
+A	java/sicc/bparser/Parser.java
+A	java/sicc/bparser/PreprocessorHandler.java
+A	java/sicc/bparser/SBlock.java
+A	java/sicc/bparser/SpecialTokens.java
+A	java/sicc/bparser/UBlockReader.java
+A	java/sicc/bparser/Util.java
+A	java/siccTESTS/bparser/ExFiles/LongBlocks.txt
+A	java/siccTESTS/bparser/ExFiles/RawStrings.txt
+A	java/siccTESTS/bparser/Test0.java
+A	java/siccTESTS/bparser/Test1Echo.java
+A	java/siccTESTS/bparser/Test2Dot.java
+A	java/siccTESTS/bparser/Test3ReaderPerf.java
+A	java/siccTESTS/bparser/Test4ParserPerf.java
+
+commit b331d5784c4113189923cf22012fa952e3ac3261
+Author: nutzer@lea0x01l32 <nutzer@lea0x01l32>
+Date:   Sat Nov 26 15:47:22 2016 +0100
+
+    Add some drafts
+
+A	drafts/ProvValid.cxx
+A	drafts/StringLiterals.cxx
+
+commit f262b2232319b7c394a165879829283ec7ef3926
+Author: nutzer <nutzer@lea0x01l32.(none)>
+Date:   Sat Nov 26 15:43:32 2016 +0100
+
+    Third test commit.
+
+D	test.txt
+
+commit 0687f76c71b2b0f5ea0e8707cc0b0dbbe0bb9d07
+Author: nutzer <nutzer@lea0x01l32.(none)>
+Date:   Sat Nov 26 15:42:44 2016 +0100
+
+    Second test commit.
+
+M	test.txt
+
+commit 790e4c5c985ab181ae4450a88fa205db1b181784
+Author: nutzer <nutzer@lea0x01l32.(none)>
+Date:   Sat Nov 26 15:35:34 2016 +0100
+
+    initial test commit
+
+A	test.txt
