@@ -1,7 +1,6 @@
 package sicc.bparser;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.Reader;
 
 /** This Parser builds blocks out of plain source code.

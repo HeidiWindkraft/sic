@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 
-import sun.security.util.Length;
-
 /** This Parser builds blocks out of plain source code.
  *
  *  It isn't a preprocessor. It assumes that either the preprocessor was already run
