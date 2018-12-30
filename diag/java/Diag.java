@@ -51,7 +51,7 @@ public class Diag {
 
 	public void printReport(PrintStream o, Severity min, Severity minStacktrace) {
 		for (DiagException d : mDiags) {
-			final int sev = mSevMap.get(d.getKey()).ordinal(); 
+			final int sev = mSevMap.get(d.getKey()).ordinal();
 			if (sev >= min.ordinal()) {
 				o.println(d.getMessage());
 				if (sev >= minStacktrace.ordinal()) {
