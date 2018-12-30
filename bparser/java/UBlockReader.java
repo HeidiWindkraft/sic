@@ -19,6 +19,9 @@ public final class UBlockReader extends java.io.Reader {
 
 	public UBlockReader(Block<?> block, SpecialTokens spectoks) {
 		mBlock = block;
+		if (spectoks == null) {
+			spectoks = new SpecialTokens();
+		}
 		mSpecToks = spectoks;
 		mEntry = null;
 		mNextEntry = 0;
