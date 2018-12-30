@@ -1,0 +1,3 @@
+src/sicc/bparser: ../../java
+src/siccTESTS/bparser: ../../jtests
+
