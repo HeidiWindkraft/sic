@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="SiccBparserDev">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="JUnit 3.libraryclasspath">
+        <pathelement location="${junit.lib.dir}/junit.jar"/>
+    </path>
+    <path id="SiccBparserDev.classpath">
+        <pathelement location="classes"/>
+        <path refid="JUnit 3.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="classes"/>
+        <copy includeemptydirs="false" todir="classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="SiccBparserDev.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="Test4ParserPerf">
+        <java classname="siccTESTS.bparser.Test4ParserPerf" failonerror="true" fork="yes">
+            <classpath refid="SiccBparserDev.classpath"/>
+        </java>
+    </target>
+    <target name="Test1Echo">
+        <java classname="siccTESTS.bparser.Test1Echo" failonerror="true" fork="yes">
+            <classpath refid="SiccBparserDev.classpath"/>
+        </java>
+    </target>
+    <target name="Test3ReaderPerf">
+        <java classname="siccTESTS.bparser.Test3ReaderPerf" failonerror="true" fork="yes">
+            <classpath refid="SiccBparserDev.classpath"/>
+        </java>
+    </target>
+    <target name="Test0 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="siccTESTS.bparser.Test0" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="SiccBparserDev.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
