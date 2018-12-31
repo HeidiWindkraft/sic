@@ -1,3 +1,7 @@
+# Compiled binaries
+*.elf
+*.o
+
 # Compiled class file
 *.class
 
