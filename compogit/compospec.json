@@ -44,5 +44,8 @@
 	},
 
 	"compogit": { "overrides": "rest", "path": ["compogit"]},
-	"rewrite_history": { "overrides": "rest", "path": ["rewrite_history"]}
+	"rewrite_history": { "overrides": "rest", "path": ["rewrite_history"]},
+
+	"doc": { "overrides": "rest", "path": ["doc"]},
+	"doc_notes": { "overrides": "doc", "path": ["doc/notes"]}
 }
