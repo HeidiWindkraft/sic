@@ -33,6 +33,7 @@ Blocks are ended by `}`.
 Each semi-colon (`;`) which is
   - not part of a for loop head
   - on the same block nesting depth
+
 is a "type identifier sequence point".
 That is, all types defined before the semi-colon are available after the semi-colon.
 
